@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+  </head>
+  <body>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      * {
+        font-family: "Montserrat Alternates", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        box-sizing: border-box;
+      }
+      main {
+        height: 100vh;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 15px;
+      }
+      .show {
+        display: none !important;
+      }
+      /* .swiper-slide {
+        transition: transform 8s ease-in-out;
+      } */
+      /* .swiper img {
+        opacity:  0.85;
+      } */
+    </style>
+    <main
+      style="
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        width: 100vw;
+        z-index: 100;
+        background: rgba(36, 35, 35, 0.562);
+      "
+    >
+      <div style="background: rgba(0, 0, 0, 0.514); color: rgba(255, 255, 255, 0.795); padding: 10px; border-radius: 8px; display: flex; flex-direction: column; gap: 15px;" class="container">
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <div style="font-size: 40px; display: flex;">
+            <p>Hi...</p>
+            <picture>
+              <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f44b/512.webp" type="image/webp">
+              <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f44b/512.gif" alt="👋" width="32" height="32">
+            </picture>
+          </div>
+          
+          <div>
+            <div style="font-size: 18px; line-height: 25px;">
+              <p>
+                I'm called Alex, an aspiring software developer based in Yde, and I'm
+              trying to connect, cuz networking is quite important in this line of
+              work. Who knows where my destiny helper could be hiding
+              </p>
+              <picture>
+                <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f609/512.webp" type="image/webp">
+                <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f609/512.gif" alt="😉" width="32" height="32">
+              </picture>
+              <picture>
+                <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f605/512.webp" type="image/webp">
+                <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f605/512.gif" alt="😅" width="32" height="32">
+              </picture>
+            </div>
+            
+          </div>
+        </div>
+        <div style="font-size: 18px;">
+          <div style="margin-bottom: 5px; display: flex; align-items: center; gap: 5px;">
+            <p>Sooooo!!!</p>
+            <picture>
+              <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f643/512.webp" type="image/webp">
+              <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f643/512.gif" alt="🙃" width="32" height="32">
+            </picture>
+          </div>
+          <p style="font-size: 18px;">
+            In order to convince you to be my friend, I came up with this.. should
+            i say plot, or plan or grand scheme, or "shemarck".
+            But it's really hard starting up conversations nowadays you know..
+          </p>
+          <div style="display: flex; gap: 5px; align-items: center;">
+            <p>hope ma speco catch.. lol</p>
+            <picture>
+              <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f972/512.webp" type="image/webp">
+              <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f972/512.gif" alt="🥲" width="32" height="32">
+            </picture>
+          </div>
+        </div>
+      </div>
+      <div style="display: flex; align-items: center; justify-content: center; padding: 15px 0;">
+        <button style="padding: 6px 10px; border: 1.7px solid white; background: none; color: white; border-radius: 4px; font-size: 17px;" class="toggle-btn" onclick=toggleContainer()>hide text</button>
+      </div>
+    </main>
+    <section>
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper" style="height: 100vh">
+          <!-- Slides -->
+          <div
+            class="swiper-slide"
+            style="
+              height: 100%;
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <img
+              style="width: 100%; height: 100%"
+              src="./images/goutham-krishna-h5wvMCdOV3w-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div
+            class="swiper-slide"
+            style="
+              height: 100%;
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <img
+              style="width: 100%; height: 100%"
+              src="./images/meric-dagli-7NBO76G5JsE-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div
+            class="swiper-slide"
+            style="
+              height: 100%;
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <img
+              style="width: 100%; height: 100%"
+              src="./images/nahil-naseer-xljtGZ2-P3Y-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div
+            class="swiper-slide"
+            style="
+              height: 100%;
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <img
+              style="width: 100%; height: 100%"
+              src="./images/neom-TA5hw14Coh4-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div
+            class="swiper-slide"
+            style="
+              height: 100%;
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <img
+              style="width: 100%; height: 100%"
+              src="./images/neom-gOqBe7ropxM-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div
+            class="swiper-slide"
+            style="
+              height: 100%;
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <img
+              style="width: 100%; height: 100%"
+              src="./images/quino-al-mBQIfKlvowM-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div
+            class="swiper-slide"
+            style="
+              height: 100%;
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <img
+              style="width: 100%; height: 100%"
+              src="./images/sapan-patel-i9Q9bc-WgfE-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div
+            class="swiper-slide"
+            style="
+              height: 100%;
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <img
+              style="width: 100%; height: 100%"
+              src="./images/sebin-thomas-OdBFUurPHjo-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div
+            class="swiper-slide"
+            style="
+              height: 100%;
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <img
+              style="width: 100%; height: 100%"
+              src="./images/goutham-krishna-h5wvMCdOV3w-unsplash.jpg"
+              alt=""
+            />
+          </div>
+
+          <!-- NEWLY ADDED IMAGES -->
+          <div
+            class="swiper-slide"
+            style="
+              height: 100%;
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <img
+              style="width: 100%; height: 100%"
+              src="./images/peakpx (1).jpg"
+              alt=""
+            />
+          </div>
+          <div
+            class="swiper-slide"
+            style="
+              height: 100%;
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <img
+              style="width: 100%; height: 100%"
+              src="./images/peakpx (2).jpg"
+              alt=""
+            />
+          </div>
+          <div
+            class="swiper-slide"
+            style="
+              height: 100%;
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <img
+              style="width: 100%; height: 100%"
+              src="./images/peakpx (3).jpg"
+              alt=""
+            />
+          </div>
+          <div
+            class="swiper-slide"
+            style="
+              height: 100%;
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <img
+              style="width: 100%; height: 100%"
+              src="./images/peakpx.jpg"
+              alt=""
+            />
+          </div>
+          <div
+            class="swiper-slide"
+            style="
+              height: 100%;
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <img
+              style="width: 100%; height: 100%"
+              src="./images/Green Themed Wallpaper.jpeg"
+              alt=""
+            />
+          </div>
+          <div
+            class="swiper-slide"
+            style="
+              height: 100%;
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <img
+              style="width: 100%; height: 100%"
+              src="./images/Graphic Corner.jpeg"
+              alt=""
+            />
+          </div>
+          <div
+            class="swiper-slide"
+            style="
+              height: 100%;
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <img
+              style="width: 100%; height: 100%"
+              src="./images/pxfuel.jpg"
+              alt=""
+            />
+          </div>
+
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      let container = document.querySelector('.container');
+      let button = document.querySelector('.toggle-btn')
+
+      function toggleContainer() {
+        container.classList.toggle('show');
+        if(container.classList.contains('show')) {
+          button.innerHTML = 'show text';
+        } else {
+          button.innerHTML = 'hide text';
+        }
+      }
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+        autoplay: {
+          delay: 4000, // Change slide every 5 seconds
+        },
+        // effect: "cube",
+        // cubeEffect: {
+        //   shadow: false,
+        //   slideShadows: false,
+        // },
+
+        // effect: "coverflow",
+        // coverflowEffect: {
+        //   rotate: 50,
+        //   stretch: 0,
+        //   depth: 100,
+        //   modifier: 1,
+        //   slideShadows: false,
+        // },
+
+        effect: "fade",
+        crossFade: true,
+        // fadeEffect: {
+        //   fadeSpeed: 8000, // Adjust fade duration here
+        // },
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
+  </body>
+</html>
